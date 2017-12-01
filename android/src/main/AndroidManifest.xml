@@ -1,0 +1,13 @@
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="ce.go.dai">
+
+    <!-- used for drawing widget. This permission must be granted before calling AudioWidget.show(). -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <!-- used for notifing user that he is about to remove widget when he drags it on remove widget icon. -->
+    <!-- This permission granted by default on Android 6.0+ devices. -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+</manifest>
+  
