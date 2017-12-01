@@ -30,9 +30,10 @@ Thanks to `Cleveroad` for `https://android-arsenal.com/details/1/3494#`
   	```
       compile project(':react-native-audio-floating-widget')
   	```
-4. Add the following lines in your MainActivity.java, are mandatory in order to request permission for overlay apps in Android 6+
-   ```
-    private static final int CODE_DRAW_OVER_OTHER_APP_PERMISSION = 2084;
+4. Add the following lines in your MainActivity.java, are mandatory in order to request permission for overlay apps in Android 6+:
+
+```
+   private static final int CODE_DRAW_OVER_OTHER_APP_PERMISSION = 2084;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +61,7 @@ Thanks to `Cleveroad` for `https://android-arsenal.com/details/1/3494#`
             }
         }
     }
-    ```
+```
 
 ## Usage
 ```javascript
