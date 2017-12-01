@@ -8,9 +8,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "audio",
+    "floating",
+    "widget",
+    "music"
   ],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cinder92/react-native-audio-floating-widget"
+  },
+  "author": "Dante Cervantes",
   "license": "",
   "peerDependencies": {
     "react-native": "^0.41.2"
