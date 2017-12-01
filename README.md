@@ -5,6 +5,8 @@ This repo is like a "Chat Head" but for audio :), i hope it helps somebody.
 
 Thanks to `Cleveroad` for `https://android-arsenal.com/details/1/3494#`
 
+![](https://github.com/Cleveroad/MusicBobber/raw/master/images/demo.gif?utm_source=android-arsenal.com&utm_medium=referral&utm_campaign=3494)
+
 ## Getting started
 
 `$ npm install react-native-audio-floating-widget --save`
