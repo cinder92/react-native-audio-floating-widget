@@ -108,7 +108,7 @@ componentWillMount() {
 | ----- | ----------  |
 | isShown | Return true if is shown, false if not |
 | hide | Destroy the widget |
-| show(options || {}) | Show the widget |
+| show(options or {}) | Show the widget |
 
 ## Available Listeners
 | Name | Description |
