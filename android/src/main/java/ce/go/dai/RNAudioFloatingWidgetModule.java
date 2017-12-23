@@ -173,6 +173,19 @@ public class RNAudioFloatingWidgetModule extends ReactContextBaseJavaModule {
   public void hide(){
     widget.hide();
   }
+  
+  
+  @ReactMethod
+  public void toggleplay(){
+    widget.controller().start();
+  }
+
+
+  @ReactMethod
+  public void togglepause(){
+    widget.controller().pause();
+  }
+
 
   private void sendEvent(ReactContext reactContext,
                          String eventName,
