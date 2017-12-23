@@ -25,7 +25,7 @@ public class RNAudioFloatingWidgetModule extends ReactContextBaseJavaModule {
   private final ReactApplicationContext reactContext;
   public AudioWidget widget;
   public boolean isPlaying = false;
-
+ 
   public RNAudioFloatingWidgetModule(ReactApplicationContext reactContext) {
     super(reactContext);
     this.reactContext = reactContext;
@@ -35,6 +35,12 @@ public class RNAudioFloatingWidgetModule extends ReactContextBaseJavaModule {
   public String getName() {
     return "RNAudioFloatingWidget";
   }
+
+  @ReactMethod
+  public void initiate(){
+    widget = new AudioWidget.Builder(reactContext).build();
+  }
+
 
   @ReactMethod
   public void show(ReadableMap options){
@@ -173,8 +179,7 @@ public class RNAudioFloatingWidgetModule extends ReactContextBaseJavaModule {
   public void hide(){
     widget.hide();
   }
-  
-  
+
   @ReactMethod
   public void toggleplay(){
     widget.controller().start();
@@ -185,6 +190,7 @@ public class RNAudioFloatingWidgetModule extends ReactContextBaseJavaModule {
   public void togglepause(){
     widget.controller().pause();
   }
+
 
 
   private void sendEvent(ReactContext reactContext,
