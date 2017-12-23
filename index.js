@@ -4,6 +4,9 @@ import { NativeModules } from 'react-native';
 const { RNAudioFloatingWidget } = NativeModules;
 
 const AudioFloatingWidget = {
+     initiate(){
+        RNAudioFloatingWidget.initiate()
+    },
     isShown(){
         return new Promise((resolve) => {
             RNAudioFloatingWidget.isShown((response) => {
