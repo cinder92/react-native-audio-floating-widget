@@ -18,6 +18,14 @@ const AudioFloatingWidget = {
 
     hide(){
         RNAudioFloatingWidget.hide();
+    },
+
+    pause(){
+        RNAudioFloatingWidget.togglepause();
+    },
+
+    play(){
+        RNAudioFloatingWidget.toggleplay();
     }
 }
 
